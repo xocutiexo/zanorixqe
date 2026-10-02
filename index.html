@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>hey</title>
+<style>
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:#0B0616;color:#F0EBF5;overflow:hidden;
+font:15px/1.5 Futura,"Avenir Next",-apple-system,BlinkMacSystemFont,sans-serif;
+display:flex;align-items:center;justify-content:center;text-align:center;
+padding:28px 22px calc(28px + env(safe-area-inset-bottom))}
+.glow{position:fixed;left:-32%;right:-32%;bottom:-15%;height:102%;z-index:0;
+background:radial-gradient(64% 86% at 50% 85%,rgba(160,98,238,.9),rgba(160,98,238,.42) 44%,rgba(160,98,238,0) 75%);
+animation:pulse 4.8s ease-in-out infinite alternate}
+.glow b{position:absolute;left:0;right:0;bottom:3%;height:84%;display:block;
+background:radial-gradient(44% 78% at 50% 91%,rgba(240,126,184,.7),rgba(240,126,184,0) 64%);
+animation:drift 6.8s ease-in-out infinite alternate}
+@keyframes pulse{from{transform:translateY(14%) scaleY(.8);opacity:.5}
+to{transform:translateY(-8%) scaleY(1.26);opacity:1}}
+@keyframes drift{from{transform:translateX(-26vw) scaleX(.84)}to{transform:translateX(26vw) scaleX(1.2)}}
+@media (prefers-reduced-motion:reduce){.glow,.glow b{animation:none}}
+.card{position:relative;z-index:2;width:100%;max-width:340px;
+border:1px solid rgba(240,235,245,.28);border-radius:10px;padding:32px 22px;
+background:rgba(0,0,0,.22)}
+.card h1{margin:0;font-size:28px;font-weight:500;line-height:1.15}
+.card p{margin:12px auto 26px;font-size:13.5px;color:rgba(240,235,245,.64);max-width:28ch}
+.go{display:block;margin:0 auto;max-width:236px;border-radius:7px;padding:17px 30px;
+font-size:15px;font-weight:600;text-decoration:none;
+color:#0E0710;background:#F3B0C8;-webkit-tap-highlight-color:transparent}
+.go:active{background:#D996AE}
+</style>
+</head>
+<body>
+<div class="glow" aria-hidden="true"><b></b></div>
+<main class="card">
+<h1>Hi there</h1>
+<p>One more tap and you're in.</p>
+<a class="go" href="https://allmyspicylink.com/zanorixqe">Continue</a>
+</main>
+</body>
+</html>
